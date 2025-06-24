@@ -160,6 +160,10 @@
     background-color: #f9f9f9;
     text-align: center;
 
+    @include m.mq(pc) {
+        max-width: none;
+    }
+
     &__title {
         font-size: 32px;
         margin-bottom: 16px;
@@ -215,6 +219,37 @@
         color: #555;
         text-align: left;
         font-weight: bold;
+    }
+}
+
+.works {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+
+        @include m.mq(pc) {
+            justify-content: space-between;
+        }
+    }
+
+    &__item {
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        width: calc(100% - 40px); // Adjust for padding
+
+        @include m.mq(pc) {
+            width: calc(33.333% - 40px); // Three items per row on PC
+        }
+
+        // &:hover {
+        //     transform: translateY(-5px);
+        // }
     }
 }
 
