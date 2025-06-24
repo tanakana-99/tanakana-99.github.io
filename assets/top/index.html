@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Webコーダー 田中 | Portfolio</title>
+    <meta property="og:title" content="Webコーダー 田中 | Portfolio">
+    <meta property="og:description" content="Webコーダー 田中のポートフォリオサイトです。HTML/CSS/JavaScriptを使用したウェブサイト制作の実績を紹介しています。">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:site_name" content="Webコーダー 田中 | Portfolio">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="/assets/style/index.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="header__title">Webコーダー Tanaka</h1>
+
+            <button type="button" class="burger-menu__btn">
+                <span class="burger-menu__bar"></span>
+                <span class="burger-menu__bar"></span>
+                <span class="burger-menu__bar"></span>
+            </button>
+            <nav class="burger-menu">
+                <ul class="burger-menu-list header__nav-list">
+                    <li><a href="#about">自己紹介</a></li>
+                    <li><a href="#works">制作実績</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="about" class="about container">
+            <img src="/assets/image/index_about_01.jpg" alt="">
+            <h2>自己紹介</h2>
+            <p>Webコーダー Tanakaです。インターネットアカデミーにてWeb知識を学び、HTML/CSS/JavaScriptを使用したウェブサイト制作を行っています。</p>
+        </section>
+
+        <section id="skills" class="skills container">
+            <img src="/assets/image/index_about_02.jpg" alt="">
+            <h2 class="skills__title">私にできること</h2>
+            <p class="skills__catch">Webサイトの設計からコーディングまで、一貫して丁寧に対応いたします。デザインカンプの正確な読み取りをもとに、意図を汲み取ったコーディングを得意としています。</p>
+            <div class="skills-box">
+                <div class="skills__item">
+                    <h3 class="skills__li">HTML / CSS</h3>
+                    <p class="skills__description">レスポンシブ対応、SEOを意識した正確なコーディングが可能です。</p>
+                </div>
+                <div class="skills__item">
+                    <h3 class="skills__li">JavaScript / jQuery</h3>
+                    <p class="skills__description">アニメーションや動的コンテンツの実装が得意です。</p>
+                </div>
+                <div class="skills__item">
+                    <h3 class="skills__li">Photoshop / Adobe XD / Figma</h3>
+                    <p class="skills__description">デザインツールの操作に慣れており、コーディングに必要な情報の正確な読み取りと素材の書き出しが可能です。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="works" class="works container">
+            <h2>制作実績</h2>
+            <ul>
+                <li>
+                    プロジェクト1
+                    <div>
+                        <img src="/assets/image/index_works_01.jpg" alt="プロジェクト1のサムネイル">
+                        <p>プロジェクト1の説明文。HTML/CSSを使用したレスポンシブデザインのウェブサイトです。</p>
+                    </div>
+                </li>
+
+                <li>プロジェクト2</li>
+                <li>プロジェクト3</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact container">
+            <h2>お問い合わせ</h2>
+            <p>ご質問やお仕事の依頼はこちらから</p>
+            <form action="https://example.com/contact" method="post">
+                <label for="name">お名前:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">メールアドレス:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">メッセージ:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">送信</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <small>© 2025 Kanako Tanaka. All Rights Reserved.</small>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="/assets/script/main.js"></script>
+</body>
+
+</html>
