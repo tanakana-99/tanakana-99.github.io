@@ -84,6 +84,7 @@ li {
 @media screen and (min-width: 768px) {
   .burger-menu a {
     color: #000;
+    font-size: 20px;
   }
 }
 .burger-menu-active {
@@ -275,7 +276,7 @@ li {
 
 .skills {
   padding: 40px 20px;
-  background-color: #f9e7ed;
+  background-color: #fff6f5;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -361,6 +362,14 @@ li {
   font-weight: bold;
 }
 
+.works {
+  padding: 40px 20px;
+}
+@media screen and (min-width: 768px) {
+  .works {
+    max-width: none;
+  }
+}
 .works__title-wrap {
   display: flex;
   align-items: center;
@@ -416,6 +425,47 @@ li {
   .works__item {
     width: calc(33.333% - 40px);
   }
+}
+
+.contact {
+  background-color: #f3eae7;
+  padding: 40px 20px;
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    max-width: none;
+  }
+}
+.contact__title-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 3%;
+  margin-bottom: 40px;
+}
+.contact__line {
+  flex-grow: 1;
+  max-width: 200px;
+  height: 1px;
+  background-color: #000;
+}
+.contact__title-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  text-align: center;
+}
+.contact__title-en {
+  font-size: 26px;
+  margin: 0;
+}
+.contact__title {
+  font-size: 34px;
+  color: #333;
+  margin: 0;
 }
 
 .footer {
