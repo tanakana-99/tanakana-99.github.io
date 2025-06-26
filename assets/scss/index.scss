@@ -122,6 +122,7 @@
     left: 1.1%;
     background-color: #fff;
     padding: 0 3.846% 0 3.333%;
+    height: 60px;
 
     @include m.mq(pc) {
         width: 100%;
@@ -134,18 +135,26 @@
 
     &__inner {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
 
         @include m.mq(pc) {
             margin: 0 auto;
+            justify-content: center;
         }
     }
 
     &__title {
         font-family: v.$f-sub;
         flex: 1;
-        text-align: center;
+        font-size: 28px;
+        padding-top: 12px;
+
+        @include m.mq(pc) {
+            font-size: 32px;
+            padding-top: 0;
+            text-align: center;
+        }
     }
 
 
@@ -153,21 +162,131 @@
 
 .main {
     margin-top: 60px;
+
+    @include m.mq(pc) {
+        margin-top: 100px;
+    }
 }
+
+.about {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 20px;
+
+    @include m.mq(pc) {
+        flex-direction: row-reverse;
+        column-gap: 2%;
+    }
+
+    &__image {
+        flex: 1;
+    }
+
+    &__text {
+        flex: 1;
+        display: flex;
+        flex-direction: column; // 必須条件
+        align-items: center;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+
+        @include m.mq(pc) {
+            max-width: 76%;
+            gap: 40px; // 縦間隔
+        }
+    }
+
+    &__title-wrap {
+        display: flex; // 横並びにする
+        align-items: center;
+        justify-content: center;
+        width: 100%; // 横幅いっぱい確保するのがポイント
+        gap: 3%; // 横線とタイトルの間隔
+    }
+
+    &__line {
+        flex-grow: 1; // 横にしっかり広げる
+        max-width: 200px; // 横線の最大幅（お好みで）
+        height: 1px; // 高さを必ず指定（これが無いと見えない）
+        background-color: #000; // 横線の色
+    }
+
+    &__title-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #555;
+        text-align: center;
+    }
+
+    &__title-en {
+        font-size: 26px;
+        margin: 0;
+    }
+
+    &__title {
+        font-size: 34px;
+        color: #333;
+        margin: 0;
+    }
+
+    &__description {
+        text-align: start;
+        font-size: 20px;
+
+        span {
+            display: block;
+        }
+    }
+}
+
 
 .skills {
     padding: 40px 20px;
-    background-color: #f9f9f9;
+    background-color: #f9e7ed;
     text-align: center;
 
     @include m.mq(pc) {
         max-width: none;
     }
 
+    &__title-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%; // 横幅をしっかり確保
+        gap: 3%; // 横線とタイトルの間隔
+        margin-bottom: 40px; // セクション間の余白（お好みで調整）
+    }
+
+    &__line {
+        flex-grow: 1; // 横線を自動で広げる
+        max-width: 200px; // 横線の最大幅（お好みで調整）
+        height: 1px; // 横線の高さ
+        background-color: #000; // 横線の色
+    }
+
+    &__title-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #555;
+        text-align: center;
+    }
+
+    &__title-en {
+        font-size: 26px;
+        margin: 0;
+    }
+
     &__title {
-        font-size: 32px;
-        margin-bottom: 16px;
+        font-size: 34px;
         color: #333;
+        margin: 0;
     }
 
     &__catch {
@@ -223,6 +342,42 @@
 }
 
 .works {
+    &__title-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%; // 横幅をしっかり確保
+        gap: 3%; // 横線とタイトルの間隔
+        margin-bottom: 40px; // セクション間の余白（お好みで調整）
+    }
+
+    &__line {
+        flex-grow: 1; // 横線を自動で広げる
+        max-width: 200px; // 横線の最大幅（お好みで調整）
+        height: 1px; // 横線の高さ
+        background-color: #000; // 横線の色
+    }
+
+    &__title-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #555;
+        text-align: center;
+    }
+
+    &__title-en {
+        font-size: 26px;
+        margin: 0;
+    }
+
+    &__title {
+        font-size: 34px;
+        color: #333;
+        margin: 0;
+    }
+
     &__list {
         display: flex;
         flex-wrap: wrap;
