@@ -217,6 +217,7 @@ li {
     flex-direction: row-reverse;
     column-gap: 2%;
     max-width: 1800px;
+    margin-bottom: 60px;
   }
 }
 .about__image {
@@ -301,6 +302,7 @@ li {
 @media screen and (min-width: 768px) {
   .skills {
     max-width: none;
+    margin-bottom: 60px;
   }
 }
 .skills__title-wrap {
@@ -409,6 +411,7 @@ li {
 @media screen and (min-width: 768px) {
   .works {
     max-width: none;
+    margin-bottom: 60px;
   }
 }
 .works__title-wrap {

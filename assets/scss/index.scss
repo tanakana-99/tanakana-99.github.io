@@ -182,6 +182,7 @@
         flex-direction: row-reverse;
         column-gap: 2%;
         max-width: 1800px;
+        margin-bottom: 60px;
     }
 
     &__image {
@@ -272,6 +273,7 @@
 
     @include m.mq(pc) {
         max-width: none;
+        margin-bottom: 60px;
     }
 
     &__title-wrap {
@@ -392,6 +394,7 @@
 
     @include m.mq(pc) {
         max-width: none;
+        margin-bottom: 60px;
     }
 
     &__title-wrap {
