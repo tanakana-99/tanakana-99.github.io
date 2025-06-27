@@ -50,7 +50,7 @@
     &__btn {
         position: absolute;
         right: 5%;
-        top: 26px;
+        top: 46px;
         display: block;
         width: 24px;
         height: 18px;
@@ -118,17 +118,18 @@
 
 
 .header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 1.1%;
+    // position: fixed;
+    // top: 0;
+    // right: 0;
+    // left: 1.1%;
     background-color: #fff;
     padding: 0 3.846% 0 3.333%;
     height: 60px;
+    margin-top: 20px;
 
     @include m.mq(pc) {
         width: 100%;
-        margin: 0 auto;
+        margin: 80px auto 0;
         padding: 0;
         top: 1.5%;
         left: 0.4%;
@@ -146,7 +147,7 @@
     }
 
     &__title {
-        font-family: v.$f-sub;
+        font-family: v.$f-main;
         flex: 1;
         font-size: 28px;
         padding-top: 12px;
@@ -237,6 +238,7 @@
         font-size: v.$font-size-title-en;
         margin: 0;
         color: v.$c-title-en;
+        font-family: v.$f-sub;
     }
 
     &__title {
@@ -252,7 +254,7 @@
         padding: 20px 0;
 
         @include m.mq(pc) {
-            font-size: 24px;
+            font-size: 22px;
             padding: 0 10%;
         }
 
@@ -306,6 +308,7 @@
         font-size: v.$font-size-title-en;
         margin: 0;
         color: v.$c-title-en;
+        font-family: v.$f-sub;
     }
 
     &__title {
@@ -425,6 +428,7 @@
         font-size: v.$font-size-title-en;
         margin: 0;
         color: v.$c-title-en;
+        font-family: v.$f-sub;
     }
 
     &__title {
@@ -458,7 +462,7 @@
 
         @include m.mq(pc) {
             column-gap: 20px;
-            justify-content: space-between;
+            justify-content: center;
         }
     }
 
@@ -522,6 +526,7 @@
         font-size: v.$font-size-title-en;
         margin: 0;
         color: v.$c-title-en;
+        font-family: v.$f-sub;
     }
 
     &__title {
@@ -546,7 +551,18 @@
             font-size: 22px;
         }
     }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
+
+.bi-x {
+    margin-right: 2px;
+}
+
 
 .footer {
     background-color: #ebe5e5;
