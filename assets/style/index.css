@@ -185,12 +185,14 @@ li {
   flex: 1;
   font-size: 28px;
   padding-top: 12px;
+  padding-left: 2%;
 }
 @media screen and (min-width: 768px) {
   .header__title {
     font-size: 32px;
     padding-top: 0;
     text-align: center;
+    padding-left: 5%;
   }
 }
 
@@ -213,6 +215,7 @@ li {
   .about {
     flex-direction: row-reverse;
     column-gap: 2%;
+    max-width: 1800px;
   }
 }
 .about__image {
@@ -281,7 +284,7 @@ li {
 @media screen and (min-width: 768px) {
   .about__description {
     font-size: 24px;
-    padding: 0;
+    padding: 0 3%;
   }
 }
 .about__description span {
@@ -289,7 +292,7 @@ li {
 }
 
 .skills {
-  padding: 40px 20px;
+  padding: 80px 20px;
   background-color: #fff6f5;
   text-align: center;
 }
@@ -348,6 +351,7 @@ li {
   .skills__catch {
     max-width: 800px;
     margin: 0 auto 32px;
+    font-size: 22px;
   }
 }
 .skills__inner {
@@ -364,6 +368,7 @@ li {
 @media (min-width: 768px) {
   .skills-box {
     grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1800px;
   }
 }
 .skills__item {
@@ -374,15 +379,25 @@ li {
   transition: transform 0.3s;
 }
 .skills__li {
-  font-size: 26px;
+  font-size: 28px;
   margin-bottom: 14px;
   color: #2c3e50;
 }
+@media screen and (min-width: 768px) {
+  .skills__li {
+    font-size: 30px;
+  }
+}
 .skills__description {
-  font-size: 16px;
+  font-size: 20px;
   color: #555;
   text-align: left;
   font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  .skills__description {
+    font-size: 22px;
+  }
 }
 
 .works {
@@ -526,10 +541,13 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
 }
 @media screen and (min-width: 768px) {
   .contact__box {
     width: 70%;
+    font-size: 22px;
   }
 }
 
