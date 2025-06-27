@@ -16,17 +16,18 @@ $f-sub: 'Montserrat', sans-serif;
 //Color
 //-----------------------------------
 $c-black: #000;
-$c-l-black: #222;
 $c-cream: #f8f4e3;
-$c-d-green: #168352;
 $c-brown: #473221;
-$c-hover-green: #066655;
+
 
 //base
 $c-main: #fff;
 
-//button
-$c-btn-bg: $c-d-green;
+//line
+$c-line: #777;
+
+// title-en
+$c-title-en: #0a0a0a;
 
 
 //-----------------------------------
@@ -53,19 +54,7 @@ $width-narrow: 960px;
 
 
 //-----------------------------------
-//font
+//font-size
 //-----------------------------------
-
-$font-sp: 15px;
-$font-pc: 15px;
-
-$font-title-en-sp: 16px;
-$font-title-en-pc: 20px;
-$font-title-ja-sp: 20px;
-$font-title-ja-pc: 28px;
-
-//-----------------------------------
-//border-radius
-//-----------------------------------
-
-$bradius-main: 24px;
+$font-size-title: 34px;
+$font-size-title-en: 26px;

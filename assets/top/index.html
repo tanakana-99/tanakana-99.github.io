@@ -38,9 +38,9 @@
             </button>
             <nav class="burger-menu">
                 <ul class="burger-menu-list header__nav-list">
-                    <li><a href="#about">自己紹介</a></li>
-                    <li><a href="#works">制作実績</a></li>
-                    <li><a href="#contact">お問い合わせ</a></li>
+                    <li><a href="#about">Profile</a></li>
+                    <li><a href="#works">works</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -79,19 +79,22 @@
                 </div>
                 <div class="skills__line"></div>
             </div>
-            <p class="skills__catch">Webサイトの設計からコーディングまで、一貫して丁寧に対応いたします。デザインカンプの正確な読み取りをもとに、意図を汲み取ったコーディングを得意としています。</p>
-            <div class="skills-box">
-                <div class="skills__item">
-                    <h3 class="skills__li">HTML / CSS</h3>
-                    <p class="skills__description">レスポンシブ対応、SEOを意識した正確なコーディングが可能です。</p>
-                </div>
-                <div class="skills__item">
-                    <h3 class="skills__li">JavaScript / jQuery</h3>
-                    <p class="skills__description">アニメーションや動的コンテンツの実装が得意です。</p>
-                </div>
-                <div class="skills__item">
-                    <h3 class="skills__li">Photoshop / Adobe XD / Figma</h3>
-                    <p class="skills__description">デザインツールの操作に慣れており、コーディングに必要な情報の正確な読み取りと素材の書き出しが可能です。</p>
+            <div class="skills__inner">
+                <p class="skills__catch">Webサイトの設計からコーディングまで、一貫して丁寧に対応いたします。デザインカンプの正確な読み取りをもとに、意図を汲み取ったコーディングを得意としています。
+                </p>
+                <div class="skills-box">
+                    <div class="skills__item">
+                        <h3 class="skills__li">HTML / CSS</h3>
+                        <p class="skills__description">レスポンシブ対応、SEOを意識した正確なコーディングが可能です。</p>
+                    </div>
+                    <div class="skills__item">
+                        <h3 class="skills__li">JavaScript / jQuery</h3>
+                        <p class="skills__description">アニメーションや動的コンテンツの実装が得意です。</p>
+                    </div>
+                    <div class="skills__item">
+                        <h3 class="skills__li">Photoshop / Adobe XD / Figma</h3>
+                        <p class="skills__description">デザインツールの操作に慣れており、コーディングに必要な情報の正確な読み取りと素材の書き出しが可能です。</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -105,7 +108,9 @@
                 </div>
                 <div class="works__line"></div>
             </div>
-
+            <div class="works__comment-box">
+                <p class="works__description">これまでに制作したレスポンシブデザインのウェブページの一例です。HTML/CSS/jQueryを使用して制作しました。</p>
+            </div>
             <ul class="works__list">
                 <li class="works__item">
                     <!-- プロジェクト1 -->
@@ -161,8 +166,11 @@
                 </div>
                 <div class="works__line"></div>
             </div>
-            <p>ご質問やお仕事の依頼はこちらから</p>
-            <form action="https://example.com/contact" method="post">
+            <div class="contact__box">
+                <p class="contact__text">ご質問やお仕事の依頼などお気軽にお問合せくださいませ。</p>
+                <a href="https://x.com/corder_tanaka" target="_blank" rel="noopener noreferrer">Xアカウントはこちら</a>
+            </div>
+            <!-- <form action="https://example.com/contact" method="post">
                 <label for="name">お名前:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -173,7 +181,7 @@
                 <textarea id="message" name="message" required></textarea>
 
                 <button type="submit">送信</button>
-            </form>
+            </form> -->
         </section>
     </main>
 

@@ -14,7 +14,7 @@
     visibility: hidden;
     opacity: 0;
     transition: all 0.2s;
-    background-color: v.$c-cream;
+    background-color: #fff6f5;
     height: 210px;
     border-radius: 24px;
     width: 91.7948%;
@@ -33,11 +33,10 @@
     }
 
     a {
-        color: #333;
+        color: v.$c-title-en;
 
         @include m.mq(pc) {
-            color: #000;
-            font-size: 20px;
+            font-size: 24px;
         }
     }
 
@@ -50,8 +49,8 @@
 
     &__btn {
         position: absolute;
-        right: 4.3%;
-        top: 25px;
+        right: 5%;
+        top: 26px;
         display: block;
         width: 24px;
         height: 18px;
@@ -87,8 +86,7 @@
 }
 
 .header__nav-list {
-    padding: 10px 0 15px;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
     color: #333;
     display: block;
@@ -127,7 +125,6 @@
 
     @include m.mq(pc) {
         width: 100%;
-        max-width: 1400px;
         margin: 0 auto;
         padding: 0;
         top: 1.5%;
@@ -187,31 +184,38 @@
     &__text {
         flex: 1;
         display: flex;
-        flex-direction: column; // 必須条件
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        max-width: 80%;
+        max-width: 90%;
         margin: 0 auto;
 
         @include m.mq(pc) {
             max-width: 76%;
-            gap: 40px; // 縦間隔
+            gap: 40px;
+            padding-top: 12%;
         }
     }
 
     &__title-wrap {
-        display: flex; // 横並びにする
+        display: flex;
         align-items: center;
         justify-content: center;
-        width: 100%; // 横幅いっぱい確保するのがポイント
-        gap: 3%; // 横線とタイトルの間隔
+        width: 100%;
+        gap: 3%;
+        font-family: v.$f-sub;
+
+        @include m.mq(pc) {
+            margin-bottom: 22px;
+            gap: 4%;
+        }
     }
 
     &__line {
-        flex-grow: 1; // 横にしっかり広げる
-        max-width: 200px; // 横線の最大幅（お好みで）
-        height: 1px; // 高さを必ず指定（これが無いと見えない）
-        background-color: #000; // 横線の色
+        flex-grow: 1;
+        max-width: 200px;
+        height: 1px;
+        background-color: v.$c-line;
     }
 
     &__title-box {
@@ -224,19 +228,27 @@
     }
 
     &__title-en {
-        font-size: 26px;
+        font-size: v.$font-size-title-en;
         margin: 0;
+        color: v.$c-title-en;
     }
 
     &__title {
-        font-size: 34px;
+        font-size: v.$font-size-title;
         color: #333;
         margin: 0;
+        font-family: v.$f-sub;
     }
 
     &__description {
         text-align: start;
         font-size: 20px;
+        padding: 20px 0;
+
+        @include m.mq(pc) {
+            font-size: 24px;
+            padding: 0;
+        }
 
         span {
             display: block;
@@ -258,16 +270,21 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100%; // 横幅をしっかり確保
-        gap: 3%; // 横線とタイトルの間隔
-        margin-bottom: 40px; // セクション間の余白（お好みで調整）
+        width: 100%;
+        gap: 3%;
+        margin-bottom: 40px;
+
+        @include m.mq(pc) {
+            margin-bottom: 22px;
+            gap: 4%;
+        }
     }
 
     &__line {
-        flex-grow: 1; // 横線を自動で広げる
-        max-width: 200px; // 横線の最大幅（お好みで調整）
-        height: 1px; // 横線の高さ
-        background-color: #000; // 横線の色
+        flex-grow: 1;
+        max-width: 200px;
+        height: 1px;
+        background-color: v.$c-line;
     }
 
     &__title-box {
@@ -280,18 +297,20 @@
     }
 
     &__title-en {
-        font-size: 26px;
+        font-size: v.$font-size-title-en;
         margin: 0;
+        color: v.$c-title-en;
     }
 
     &__title {
-        font-size: 34px;
+        font-size: v.$font-size-title;
         color: #333;
         margin: 0;
+        font-family: v.$f-sub;
     }
 
     &__catch {
-        font-size: 16px;
+        font-size: 20px;
         margin-bottom: 32px;
         color: #555;
         text-align: start;
@@ -299,8 +318,13 @@
 
         @include m.mq(pc) {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 0 auto 32px;
         }
+    }
+
+    &__inner {
+        max-width: 90%;
+        margin: 0 auto;
     }
 
     &-box {
@@ -323,19 +347,19 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s;
 
-        &:hover {
-            transform: translateY(-5px);
-        }
+        // &:hover {
+        //     transform: translateY(-5px);
+        // }
     }
 
     &__li {
-        font-size: 20px;
-        margin-bottom: 12px;
+        font-size: 26px;
+        margin-bottom: 14px;
         color: #2c3e50;
     }
 
     &__description {
-        font-size: 14px;
+        font-size: 16px;
         color: #555;
         text-align: left;
         font-weight: bold;
@@ -354,16 +378,21 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100%; // 横幅をしっかり確保
-        gap: 3%; // 横線とタイトルの間隔
-        margin-bottom: 40px; // セクション間の余白（お好みで調整）
+        width: 100%;
+        gap: 3%;
+        margin-bottom: 40px;
+
+        @include m.mq(pc) {
+            margin-bottom: 22px;
+            gap: 4%;
+        }
     }
 
     &__line {
-        flex-grow: 1; // 横線を自動で広げる
-        max-width: 200px; // 横線の最大幅（お好みで調整）
-        height: 1px; // 横線の高さ
-        background-color: #000; // 横線の色
+        flex-grow: 1;
+        max-width: 200px;
+        height: 1px;
+        background-color: v.$c-line;
     }
 
     &__title-box {
@@ -376,24 +405,42 @@
     }
 
     &__title-en {
-        font-size: 26px;
+        font-size: v.$font-size-title-en;
         margin: 0;
+        color: v.$c-title-en;
     }
 
     &__title {
-        font-size: 34px;
+        font-size: v.$font-size-title;
         color: #333;
         margin: 0;
+        font-family: v.$f-sub;
     }
+
+    &__comment-box {
+        max-width: 90%;
+        margin: 0 auto 32px;
+
+        @include m.mq(pc) {
+            max-width: 70%;
+            text-align: center;
+        }
+    }
+
+    &__description {
+        font-size: 22px;
+    }
+
 
     &__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
         padding: 20px;
+        row-gap: 70px;
 
         @include m.mq(pc) {
+            column-gap: 20px;
             justify-content: space-between;
         }
     }
@@ -404,10 +451,10 @@
         padding: 20px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s;
-        width: calc(100% - 40px); // Adjust for padding
+        width: calc(100% - 40px);
 
         @include m.mq(pc) {
-            width: calc(33.333% - 40px); // Three items per row on PC
+            width: calc(33.333% - 40px);
         }
 
         // &:hover {
@@ -428,16 +475,21 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100%; // 横幅をしっかり確保
-        gap: 3%; // 横線とタイトルの間隔
-        margin-bottom: 40px; // セクション間の余白（お好みで調整）
+        width: 100%;
+        gap: 3%;
+        margin-bottom: 40px;
+
+        @include m.mq(pc) {
+            margin-bottom: 22px;
+            gap: 4%;
+        }
     }
 
     &__line {
-        flex-grow: 1; // 横線を自動で広げる
-        max-width: 200px; // 横線の最大幅（お好みで調整）
-        height: 1px; // 横線の高さ
-        background-color: #000; // 横線の色
+        flex-grow: 1;
+        max-width: 200px;
+        height: 1px;
+        background-color: v.$c-line;
     }
 
     &__title-box {
@@ -450,14 +502,28 @@
     }
 
     &__title-en {
-        font-size: 26px;
+        font-size: v.$font-size-title-en;
         margin: 0;
+        color: v.$c-title-en;
     }
 
     &__title {
-        font-size: 34px;
+        font-size: v.$font-size-title;
         color: #333;
         margin: 0;
+        font-family: v.$f-sub;
+    }
+
+    &__box {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include m.mq(pc) {
+            width: 70%;
+        }
     }
 }
 
