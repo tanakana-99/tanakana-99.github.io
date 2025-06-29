@@ -423,11 +423,14 @@ li {
   transition: transform 0.3s;
 }
 .skills__li {
-  flex: 1 1 auto;
-  min-height: 60px;
+  flex: 1 1 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
   font-size: 28px;
-  margin-bottom: 14px;
   color: #2c3e50;
+  line-height: 1.5;
 }
 @media screen and (min-width: 768px) {
   .skills__li {
@@ -435,14 +438,21 @@ li {
   }
 }
 .skills__description {
-  flex: 3 1 auto;
+  flex: 3 1 0%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 0;
   font-size: 16px;
   color: #555;
   text-align: left;
   font-weight: bold;
+  overflow: auto;
+  padding-right: 3%;
 }
 @media screen and (min-width: 768px) {
   .skills__description {
+    padding: 0 5%;
     font-size: 17px;
   }
 }
