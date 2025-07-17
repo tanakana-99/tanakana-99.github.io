@@ -314,6 +314,85 @@ li {
   display: block;
 }
 
+.scroll_down_box {
+  position: relative;
+}
+
+.scroll_down {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  animation: arrowmove 1s ease-in-out infinite;
+}
+
+.text {
+  display: block;
+  margin-top: 70px;
+  margin-left: -14px;
+  font-size: 12px;
+  color: #000;
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 2px;
+}
+
+.arrow {
+  position: absolute;
+  width: 28px;
+  height: 5px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.arrow:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.arrow:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.arrow:before,
+.arrow:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #000;
+}
+
+.arrow:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.arrow:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
 .skills {
   padding: 80px 20px;
   background-color: #fff6f5;
@@ -323,7 +402,7 @@ li {
   .skills {
     max-width: none;
     margin-bottom: 60px;
-    padding: 60px 20px;
+    padding: 100px 20px;
   }
 }
 .skills__title-wrap {
@@ -397,7 +476,6 @@ li {
 .skills-box {
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: minmax(400px, auto);
   gap: 40px;
   max-width: 800px;
   margin: 0 auto;
@@ -415,7 +493,6 @@ li {
 .skills__item {
   display: flex;
   flex-direction: column;
-  height: 100%;
   background-color: #fff;
   border-radius: 12px;
   padding: 20px;
@@ -633,11 +710,12 @@ li {
 .contact__link {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.bi-x {
-  margin-right: 2px;
+.bi-twitter-x {
+  width: 24px;
+  height: 24px;
 }
 
 .footer {
