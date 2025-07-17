@@ -9,6 +9,7 @@ $(window).on('resize', function () {
     hamburger.removeClass('burger-menu-active');
 });
 
-$('.burger-menu a').on('click', function () {
+// スマホ実機対応：クリック＋タッチ両方
+$('.burger-menu a').on('click touchend', function () {
     hamburger.removeClass('burger-menu-active');
 });
